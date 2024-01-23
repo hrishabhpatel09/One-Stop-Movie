@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+.navbar{
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.board{
+    height: 230px;
+    background-image: url(DI_dark_castle_preview.jpg);
+}
+.logo{
+    background-image: url(/favicon.png);
+    background-size: cover;
+    height: 54px;
+    width: 54px;
+    position: absolute;
+    left: 56px;
+}
+.navbar h1{
+    height: 47px;
+    font-size: 40px;
+    position: absolute;
+    left: 118px;
+    font-family: 'Londrina Shadow', sans-serif;
+}
+.navbar ul li{
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    gap: 15px;
+}
+.watchlist-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 10px;
+}
+.watchlist-section div{
+    display: flex;
+    height: 202px;
+    border-radius: 8px;
+    margin: 0px 50px 0px 80px;
+    width: 1323px;
+    border: 1px solid grey;
+    box-shadow: 0.5px 0.5px 2px black ;
+    overflow: none;
+}
+.watchlist-section div img{
+    width: 133px;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.watchlist-section div div h3{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.watchlist-section div div{
+    border: none;
+    border-radius: 0px;
+    display: flex;
+    box-shadow: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+}
+.watchlist-section div div p{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.watchlist-section div div button{
+    background-color: rgb(178, 178, 178);
+    height: 40px;
+    box-shadow: none;
+    width: 120px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+}
+.watchlist-section div div button:active{
+    scale: 0.97;
+}

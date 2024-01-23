@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz@7..72&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo home"></div>
+    <h1 class="home">OSM</h1>
+    <ul style="cursor: pointer;">
+      <li id="kone" onclick="location.href=`homepage.html`">Movies</li>
+      <li id="ktwo" onclick="location.href=`homepage.html`">TV Shows</li>
+      <li id="kthree" onclick="location.href=`watchlist.html`">Watchlist</li>
+    </ul>
+    <div style="margin-right: 50px; display: flex;gap:25px" ><i class="fa-solid fa-user"></i>
+        <i class="fa-sharp fa-solid fa-moon" id="moon"></i>
+        <i class="fa-solid fa-sun" id="sun" style="display: none;"></i>
+    </div>
+</div>
+  <iframe width="1108" height="685" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen onclick="cancel()"></iframe>
+  <i class="fa-solid fa-xmark" style="position: absolute;top: 0px;z-index: 1;left: 1324px;display: none;" id="cross_icon"></i>
+    <div class="backdrop">
+      <div style="height: 100%;width: 100%;display: flex;backdrop-filter: blur(3px);align-items: center; background-color: rgb(255,255,255,0.4);">
+        <div class="poster">
+          <img id="poster">
+        </div>
+        <div id="description" >
+          <div id="head">
+            <h1 id="title" style="font-size: 48px;font-family: 'Source Sans 3', sans-serif;">Movie_Title</h1>
+            <p id="genres-detail"></p>
+          </div>
+          <div id="rating">
+            <span style="display: flex;align-items: center;gap: 2px;" id="playTrailer" onclick="launchTrailer()"><i class="fa-solid fa-play"></i><p>Play Trailer</p></span>
+            <button id="add">Add to WatchList</button>
+          </div>
+          <div id="story">
+            <p style="font-size: 20px;font-family: 'Source Sans 3', sans-serif;font-weight: bold;">Overview</p>
+            <p id="p-overview" style="font-family: 'Source Sans 3', sans-serif;font-weight: 500;font-size: 18px;">Moviee_Overview</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 55px;" class="cast">
+      <h2 style="font-family: 'Source Sans 3', sans-serif;margin-bottom: 10px;">Top Cast</h2>
+      <div class="personlist" style="font-family: 'Source Sans 3', sans-serif;font-weight: 700;">
+        <div class="person"  id="0">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person"  id="1">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person"  id="2">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person"  id="3">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person" id="4">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person" id="5">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person"  id="6">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person"  id="7">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person"  id="8">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+        <div class="person"  id="9">
+          <img src="" alt="" class="avtar">
+          <p class="person_name"></p>
+          <p class="person_role"></p>
+        </div>
+      </div>
+      <div class="rating">
+        <div class="value" name="1">1</div>
+        <div class="value" name="2">2</div>
+        <div class="value" name="3">3</div>
+        <div class="value" name="4">4</div>
+        <div class="value" name="5">5</div>
+        <div class="value" name="6">6</div>
+        <div class="value" name="7">7</div>
+        <div class="value" name="8">8</div>
+        <div class="value" name="9">9</div>
+        <div class="value" name="10">10</div>
+      </div>
+      <div style="display: flex;justify-content: center;margin-top: 30px;height: 35px;"><button style="width: 100px;border-radius: 8px;border: none;background-color: blueviolet;" id="submit-btn">Submit</button></div>
+    </div>
+<div id="trailer">
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/NxW_X4kzeus?si=Ytj3D8Ft0XJRZWPy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="vid"></iframe> -->
+</div>
+<script src="info.js" type="module" ></script>
+<script type="module" src="firestore.js"></script>
+</body>
+</html>

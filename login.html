@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In-One Stop Movie</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <style>
+        body{
+            background-image: url("loginbg.jpg");
+            background-size: cover;
+            /* background-position: center; */
+            /* background-size: contain; */
+            /* background-repeat: no-repeat; */
+            display: flex;
+            justify-content: center;
+            transition: all ease-in;
+        }
+        .container{
+            background-color: white;
+            height: 75vh;
+            width: 327px;
+            border-radius: 21px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;align-items: center;
+            top: 10vh;
+            align-self: center;
+            
+        }
+        .logo{
+            height: 72px;
+            width: 72px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 57px;
+            background-image: url("favicon.png");
+            background-size: cover;
+        }
+        .container input{
+            height: 48px;
+            border-radius: 4px;
+            border: 1px solid black;
+            width: 265px;
+        }
+        #email{
+            position: absolute;
+            top: 193px;
+        }
+        #password{
+            position: absolute;
+            top: 261px;
+        }
+        #forget{
+            height: 15px;
+            width: 99px;
+            font-size: 12px;
+            position: absolute;
+            top: 319px;
+            left: 40px;
+            color: #0500FF;
+            text-decoration: none;
+        }
+        .container button{
+            width: 139px;
+            height: 53px;
+            border-radius: 7px;
+            border: 1.5px solid ;
+            position: absolute;
+            top: 354px;
+            color: white;
+            font-weight: 300;
+            background-color:#0ea5e9;
+            font-size: 20px;
+            font-family: Inter;
+        }
+        .container button:hover{
+            background-color: #37c0ff;
+        }
+        .container button:active{
+            scale: 0.97;
+        }
+        #emailLabel{
+            position: absolute;
+            top: 208px;
+            left: 35px;
+            background-color: white;
+            font-size: 16px;
+        }
+        #passwordLabel{
+            position: absolute;
+            top: 275px;
+            background-color: white;
+            left: 35px;
+            font-size: 16px;
+        }
+        .container hr{
+            border: 0.5px solid rgb(192, 189, 189);
+            width: 260px;
+            position: absolute;
+            top: 440px;
+        }
+        .container p{
+            position: top;
+
+        }
+        .signup{
+            position: absolute;
+            top: 460px;
+        }
+        .or{
+            position: absolute;
+            top: 424px;
+            background-color: white;
+        }
+        #signup{
+            text-decoration: none;
+            padding-top: 16px;
+            font-size: 16px;
+            color: #0ea5e9;
+        }
+        .container i{
+            position: absolute;
+            top: 278px;
+            right: 45px;
+        }
+        #hideButton{
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+    <div class="container">
+        <div class="logo"></div>
+        <input type="text" id="email">
+        <label for="email" id="emailLabel">Email</label>
+        <input type="password" id="password">
+        <i class="fa-solid fa-eye" id="seeButton"></i>
+        <i class="fa-solid fa-eye-slash" id="hideButton"></i>
+        <label for="password" id="passwordLabel">Password</label>
+        <a href="" id="forget">Forget password?</a>
+        <button id="loginbtn">Log In</button>
+        <hr>
+        <p class="or">OR</p>
+        <div class="signup" style="display: flex;justify-content: center; gap: 7px;"> 
+            <p>Don't have an account?    </p>
+            <a href="/register.html" id="signup">SignUp</a>
+        </div>
+    </div>
+    <script type="module" src="modules.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

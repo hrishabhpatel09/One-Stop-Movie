@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchList</title>
+    <link rel="stylesheet" href="watchlist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz@7..72&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"></div>
+        <h1>OSM</h1>
+        <ul style="cursor: pointer;">
+          <li id="kone">Movies</li>
+          <li id="ktwo">TV Shows</li>
+          <li id="kthree" onclick="location.href=`watchlist.html`">Watchlist</li>
+        </ul>
+        <div style="margin-right: 50px; display: flex;gap:25px" ><i class="fa-solid fa-user"></i>
+            <i class="fa-sharp fa-solid fa-moon" id="moon"></i>
+            <i class="fa-solid fa-sun" id="sun" style="display: none;"></i>
+        </div>
+    </div>
+
+
+
+    <div class="watchlist-section">
+        
+    </div>
+    <script type="module" src="watchlist.js"></script>
+</body>
+</html>

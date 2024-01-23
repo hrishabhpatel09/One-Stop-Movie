@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.backdrop{
+    width: 100%;
+    height: 512px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      
+}
+.poster{
+    width: 300px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 45px;
+    flex-shrink: 0;
+}
+#poster{
+    width: 100%;
+    height: 100%;
+}
+#description{
+    /* background-color: yellow; */
+    width: 1150px;
+    height: 450px;
+    color: black;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+#description h1{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 35.2px;
+}
+.star{
+    height: 15px;
+    width: 15px;background-color: aliceblue;
+}
+#head{
+    /* background-color: red; */
+    height: 95px;
+}
+#story{
+    /* background-color: green; */
+    height: 110px;
+}
+#rating{
+    /* background-color: pink; */
+    height: 100px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+  #playTrailer:hover{
+    opacity: 0.7;
+  }
+
+body iframe{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 14%;
+    z-index: 1;
+}
+.cast{
+    height: 550px;
+    padding-left: 45px;
+    width: 95%;
+}
+.personlist{
+    
+    display: flex;
+    gap: 17px;
+    height: 271px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.person{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 139px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+}
+.person img{
+    height: 173px;
+    /* background-color: red; */
+    width: 100%;
+}
+.person{
+    overflow: hidden;
+}
+
+.personlist {
+    --sb-track-color: #dcf0f9;
+    --sb-thumb-color: #6BAF8D;
+    --sb-size: 5px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  .personlist::-webkit-scrollbar {
+    width: var(--sb-size);
+    height: 4px; 
+  }
+  
+  .personlist::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 25px;
+  }
+  
+  .personlist::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 25px;
+    }
+
+.person_name{
+    text-align: center;
+    font-size: 16px;
+}
+.person_role{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+body {
+    --sb-track-color: #dcf0f9;
+    --sb-thumb-color: #6BAF8D;
+    --sb-size: 5px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 25px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 25px;
+    }
+
+    .navbar{
+        height: 71px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .board{
+        height: 230px;
+        background-image: url(DI_dark_castle_preview.jpg);
+    }
+    .logo{
+        background-image: url(/favicon.png);
+        background-size: cover;
+        height: 54px;
+        width: 54px;
+        position: absolute;
+        left: 56px;
+    }
+    .navbar h1{
+        height: 47px;
+        font-size: 40px;
+        position: absolute;
+        left: 118px;
+        font-family: 'Londrina Shadow', sans-serif;
+    }
+    .navbar ul li{
+        font-family: 'Inter', sans-serif;
+        list-style: none;
+        
+    }
+    .navbar ul{
+        display: flex;
+        align-items: center;
+        margin-left: 400px;
+        gap: 15px;
+    }
+
+#rating button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    color: white;
+    background-color: #6BAF8D;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#rating button:hover{
+    background-color: #5c9b7c;
+}
+
+.rating{
+    margin-top: 100px;
+    align-items: center;
+    height: 45px;
+    margin-left: 30%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.value{
+    /* background-color: black; */
+    height: 35px;
+    border-radius: 5px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.value:hover{
+    opacity: 1;
+}
+.rating div:nth-child(1){
+    background-color: #ff7575;
+}
+.rating div:nth-child(2){
+    background-color: #ff7575;
+}
+.rating div:nth-child(3){
+    background-color: #ff7575;
+}
+.rating div:nth-child(4){
+    background-color: #ff7575;
+}
+.rating div:nth-child(5){
+    background-color: #ff7575;
+}
+.rating div:nth-child(6){
+    background-color: #ff7575;
+}
+.rating div:nth-child(7){
+    background-color: #fbbe29;
+}
+.rating div:nth-child(8){
+    background-color: #fbbe29;
+}
+.rating div:nth-child(9){
+    background-color:  #73ce38;
+}
+.rating div:nth-child(10){
+    background-color: #73ce38;
+}
+#submit-btn:active{
+    scale: 0.98;
+}

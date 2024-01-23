@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Stop Movie</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="./mediaQueries/homepageQ.css" media="screen and (min-width: 320px) and (max-width:480px)">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz@7..72&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"></div>
+        <h1>OSM</h1>
+        <ul style="cursor: pointer;">
+          <li id="kone">Movies</li>
+          <li id="ktwo">TV Shows</li>
+          <li id="kthree" onclick="location.href=`watchlist.html`">Watch-List</li>
+        </ul>
+        <div style="margin-right: 50px; display: flex;gap:25px" ><i class="fa-solid fa-user"></i>
+            <i class="fa-sharp fa-solid fa-moon" id="moon"></i>
+            <i class="fa-solid fa-sun" id="sun" style="display: none;"></i>
+        </div>
+    </div>
+    <div class="board">
+        <h1>Welcome.</h1>
+        <p id="p1">Millions of movies, TV shows and people to discover. Explore now.</p>
+        <input type="search" name="" id="search-box" placeholder="What are you Looking for ?">
+        <button id="search-btn"  style="cursor: pointer;">Search</button>
+    </div>
+    <div class="trending">
+        <div style="display: flex;gap: 10px;margin-top: 2px;">
+            <p style="font-size: 16px;font-family: 'Literata', serif; margin-left: 25px;">Trending</p>
+            <div id="trendtype" style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                <div style="width: 68px;text-align: center;" class="active" id="time1"><p class="today color">Today</p></div>
+                <div id="time2" style="width: 108px;"><p class="thisweek">This Week</p></div>
+            </div>
+        </div> 
+        <div class="trending_screen" id="trending_day">
+        <div id="0"></div>
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+        <div id="5"></div>
+        <div id="6"></div>
+        <div id="7"></div>
+        <div id="8"></div>
+        <div id="9"></div>
+        <div id="10"></div>
+        <div id="11"></div>
+        <div id="12"></div>
+        <div id="13"></div>
+        <div id="14"></div>
+        <div id="15"></div>
+        <div id="16"></div>
+        <div id="17"></div>
+        </div>
+        <div id="trending_week" class="trending_screen" style="display: none;">
+        <div id="0"></div>
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+        <div id="5"></div>
+        <div id="6"></div>
+        <div id="7"></div>
+        <div id="8"></div>
+        <div id="9"></div>
+        <div id="10"></div>
+        <div id="11"></div>
+        <div id="12"></div>
+        <div id="13"></div>
+        <div id="14"></div>
+        <div id="15"></div>
+        <div id="16"></div>
+        <div id="17"></div>
+        </div>
+    </div>
+    <footer style="display: flex;justify-content: center;align-items: center;">
+        <div>
+            <div id="footer-logo-div"><img src="favicon.png" alt="icon">One Stop Movie</div>
+            <div id="copyright">Copyright  &#169; 2024 One Stop, In</div>
+            <div id="footer-link">
+                <div id="box1"><a href="homepage.html">Home</a></div>
+                <div id="box2"><a href="watchlist.html">Watchlist</a></div>
+                <div><a href="#">Contact us</a></div>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

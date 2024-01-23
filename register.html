@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(loginbg.jpg);
+            display: flex;
+            justify-content: center;
+            /* transition: all 2s ease-in; */
+        }
+        .container{
+            background-color: white;
+            height: 577px;
+            width: 327px;
+            border-radius: 21px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;align-items: center;
+            top: 86px;
+        }
+        .logo{
+            height: 72px;
+            width: 72px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top: 57px;
+            background-image: url("favicon.png");
+            background-size: cover;
+        }
+        .container input{
+            height: 48px;
+            border-radius: 4px;
+            border: 1px solid black;
+            width: 255px;
+            padding-left: 10px;
+        }
+        #email{
+            position: absolute;
+            top: 193px;
+        }
+        #pass{
+            position: absolute;
+            top: 261px;
+        }
+        #conpass{
+            position: absolute;
+            top: 329px;
+        }
+        #emailLabel{
+            position: absolute;
+            top: 208px;
+            font-size: 16px;
+            left: 40px;
+            background-color:white;
+            border: 2px solid white;
+        }
+        #passLabel{
+            position: absolute;
+            top: 279px;
+            font-size: 16px;
+            left: 40px;
+            background-color:white;
+            border: 2px solid white;
+        }
+        #conpassLabel{
+            position: absolute;
+            top: 343px;
+            font-size: 16px;
+            left: 40px;
+            background-color:white;
+            border: 2px solid white;
+        }
+        .container button{
+            width: 139px;
+            height: 53px;
+            border-radius: 7px;
+            border: 1.5px solid ;
+            position: absolute;
+            top: 415px;
+            color: white;
+            font-weight: 300;
+            background-color:#0ea5e9;
+            font-size: 20px;
+            font-family: Inter;
+        }
+        .container button:hover{
+            background-color: #37c0ff;
+        }
+        .container button:active{
+            scale: 0.97;
+        }
+        .icon1{
+            position: absolute;
+            top: 280px;
+            right: 46px;
+        }
+        .icon2{
+            position: absolute;
+            top: 345px;
+            right: 46px;
+        }
+    </style>
+    <div class="container">
+        <div class="logo"></div>
+        <input type="text" id="email" required>
+        <label for="email" id="emailLabel">Email</label>
+        <input type="password" id="pass" class="password">
+        <label for="pass" id="passLabel">Password</label>
+        <i class="fa-solid fa-eye icon1 show" id="seeButton"></i>
+        <i class="fa-solid fa-eye-slash icon1 hide" id="hideButton" style="visibility: hidden;"></i>
+        <input type="password" id="conpass" class="password">
+        <label for="conpass" id="conpassLabel">Confirm Password</label>
+        <i class="fa-solid fa-eye icon2 show" id="seeButton"></i>
+        <i class="fa-solid fa-eye-slash icon2 hide" id="hideButton" style="visibility: hidden;"></i>
+        <button id="register_btn">Sign Up</button>
+    </div>
+    <script type="module" src="/module_register.js"></script>
+    <script>
+        const emailLabel = document.querySelector("#emailLabel");
+        const passLabel = document.querySelector("#passLabel");
+        const conpassLabel = document.querySelector("#conpassLabel");
+
+        const inputs = document.querySelectorAll(".container input");
+        inputs.forEach((input)=>{
+            input.addEventListener("click",()=>{
+                if(input.id=="email"){
+                    emailLabel.style.fontSize="12px";
+                    emailLabel.style.top="188px";
+                }
+                else if(input.id=="pass"){
+                    passLabel.style.fontSize="12px";
+                    passLabel.style.top="256px";
+                }
+                else{
+                    conpassLabel.style.fontSize="12px";
+                    conpassLabel.style.top="323px";
+                }
+            });
+        });
+        const showbtn=document.querySelectorAll(".show");
+        const hidebtn=document.querySelectorAll(".hide");
+        showbtn.forEach((item)=>{
+           
+            item.addEventListener("click",()=>{
+                passwords.forEach((i)=>{
+                i.type="text";
+                });
+                showbtn.forEach((i)=>{
+                    i.style.visibility="hidden";
+                })
+                hidebtn.forEach((i)=>{
+                    i.style.visibility="visible";
+                });
+            })
+        });
+
+        hidebtn.forEach((item)=>{
+            item.addEventListener("click",()=>{
+                passwords.forEach((i)=>{
+                i.type="password";
+                });
+                hidebtn.forEach((i)=>{
+                    i.style.visibility="hidden";
+                });
+                showbtn.forEach((i)=>{
+                    i.style.visibility="visible"
+                })
+            })
+        });
+
+        const passwords =document.querySelectorAll(".password");
+    </script>
+</body>
+</html>

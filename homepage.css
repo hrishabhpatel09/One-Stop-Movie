@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+.navbar{
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.board{
+    height: 230px;
+    background-image: url(DI_dark_castle_preview.jpg);
+}
+.logo{
+    background-image: url(/favicon.png);
+    background-size: cover;
+    height: 54px;
+    width: 54px;
+    position: absolute;
+    left: 56px;
+}
+.navbar h1{
+    height: 47px;
+    font-size: 40px;
+    position: absolute;
+    left: 118px;
+    font-family: 'Londrina Shadow', sans-serif;
+}
+.navbar ul li{
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    margin-left: 400px;
+    gap: 15px;
+}
+.board h1{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 91px;
+    left: 187px;
+    font-family: 'Inter', sans-serif;
+}
+#search-box{
+    width: 986px;
+    height: 56px;
+    position: absolute;
+    top: 215px;
+    left: 178px;
+    padding-left: 25px;
+    border: none;
+    border-radius: 22px;
+}
+#search-box::placeholder{
+    font-family: 'Inter', sans-serif;
+    
+}
+#search-box:focus{
+    outline: none;
+}
+#search-btn{
+    position: absolute;
+    background: linear-gradient(to right,#1DD4AA, #02B5E2AB, #0BC0CE, #02B5E2);
+    width: 163px;
+    height: 57px;
+    top: 214px;
+    left: 1003px;
+    border: none;
+    border-radius: 24px;
+}
+#p1{
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    position: absolute;
+    width: 955px;
+    height: 30px;
+    top: 147px;
+    left: 187px;
+}
+#search-btn{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+#search-btn:hover{
+    color: black;
+    
+}
+#search-btn:active{
+    scale: 0.98;
+}
+.trending{
+    height: 412px;
+    margin-top: 10px;
+}
+.trending_screen{
+    /* background-color: black; */
+    height: 360px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+    gap: 25px;
+   overflow-x: scroll;
+   
+
+}
+
+.trending_screen{
+    --sb-track-color: #dcf0f9;
+    --sb-thumb-color: #6BAF8D;
+    --sb-size: 1px;
+  
+    /* scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color); */
+  }
+  
+  .trending_screen::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  .trending_screen::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  .trending_screen::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+    
+    }
+.trending_screen div{
+    width: 185px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    /* height: 275px; */
+    gap: 4px;
+    cursor: pointer;
+}
+.trending_screen div img:hover{
+    scale: 1.02;
+    opacity: 0.8;
+}
+.trending_screen div h4:hover{
+    background: linear-gradient(to right,#28f7c6, #02b5e2cf, #0BC0CE, #02B5E2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.trending_screen img{
+    border-radius: 22px;
+}
+#trendtype{
+    height: 25px;
+    width: 165px;
+    border: 1px solid black;
+    border-radius: 13px;
+}
+.active{
+    background-color: #032541;
+     border-radius: 13px;
+     color: white;
+     text-align: center;
+     height: 25px;
+     align-items: center;
+     align-self: center;
+}
+.color{
+    background: linear-gradient(to right,#1DD4AA, #02b5e2cf, #0BC0CE, #02B5E2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#trendtype{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    /* align-self: center; */
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #181b1b;
+    overflow: hidden;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+footer div{
+    height: 50%;
+    width: 40%;
+    /* align-items: center; */
+}
+#footer-logo-div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    justify-content: center;
+}
+footer div div img{
+    height: 100%;
+}
+#copyright{
+    margin-left: 30%;
+    height: 25px;
+    text-align: center;
+    opacity: 0.4;
+    font-size: 13px;
+}
+#footer-link{
+    height: 35px;
+    width: 300px;
+    margin-top: 8px;
+    margin-left: 23%;
+    display: flex;
+}
+#footer-link div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer-link div a{
+    /* text-decoration: none; */
+    color: white;
+}
+#box1{
+    border-right: 1px solid white;
+}
+#box2{
+    border-right: 1px solid white;
+}
